@@ -1,0 +1,14 @@
+1 - Criar projeto
+ng new <nome do projeto>
+
+2 - Instalar as dependências que iremos usar
+Angular Material
+Highchart
+Flex Layout
+
+ng add @angular/material
+npm i highcharts-angular --save
+npm i highcharts --save
+npm i angular/flex-layout @angular/cdk --save
+
+3 - 
