@@ -11,4 +11,11 @@ npm i highcharts-angular --save
 npm i highcharts --save
 npm i angular/flex-layout @angular/cdk --save
 
-3 - 
+3 - Shared Modules
+Módulos compartilhados
+Crie um módulo compartilhado para o cabeçalho. Barra lateral e rodapé para melhor organização do código.
+Crie os componentes Cabeçalho, Barra Lateral e Rodapé.
+Crie um módulo compartilhado para ele.
+Atualize o módulo e adicione esses componentes nas seções Declaração e Exportação.
+
+4 - 
