@@ -4,15 +4,20 @@ import { RouterModule } from '@angular/router';
 
 import { DefaultComponent } from './default.component';
 import { DashboardComponent } from './../../modules/dashboard/dashboard.component';
+import { PostsComponent } from './../../modules/posts/posts.component';
+
+import { SharedModule } from './../../shared/shared.module';
 
 @NgModule({
   declarations: [
     DefaultComponent,
-    DashboardComponent
+    DashboardComponent,
+    PostsComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class DefaultModule { }
