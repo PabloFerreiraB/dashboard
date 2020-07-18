@@ -16,13 +16,15 @@ import { MatListModule } from '@angular/material/list';
 
 import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from "Highcharts-angular";
+import { CardComponent } from './widgets/card/card.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,8 @@ import { HighchartsChartModule } from "Highcharts-angular";
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }
