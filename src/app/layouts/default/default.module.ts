@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { SharedModule } from './../../shared/shared.module';
 
+import { DashboarService } from './../../modules/dashboar.service';
+
 import { DefaultComponent } from './default.component';
 import { DashboardComponent } from './../../modules/dashboard/dashboard.component';
 import { UsersComponent } from './../../modules/users/users.component';
@@ -12,6 +14,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -26,6 +29,9 @@ import { MatCardModule } from '@angular/material/card';
     MatDividerModule,
     FlexLayoutModule,
     MatCardModule
+  ],
+  providers: [
+    DashboarService
   ]
 })
 export class DefaultModule { }

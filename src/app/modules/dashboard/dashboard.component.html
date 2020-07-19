@@ -1,5 +1,5 @@
 <div>
-  <app-widget-area></app-widget-area>
+  <app-widget-area [data]="chartArea"></app-widget-area>
 </div>
 
 <br>
@@ -8,24 +8,19 @@
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
   <mat-card fxFlex="22">
-    <app-widget-card label="New Users" total="18k" percentage="50"></app-widget-card>
+    <app-widget-card label="New Users" total="35k" percentage="80" [data]="chartCard"></app-widget-card>
   </mat-card>
   <mat-card fxFlex="22">
-    <app-widget-card label="Loyal Users" total="12k" percentage="40"></app-widget-card>
+    <app-widget-card label="Loyal Users" total="12k" percentage="45" [data]="chartCard"></app-widget-card>
   </mat-card>
   <mat-card fxFlex="22">
-    <app-widget-card label="Partners" total="8k" percentage="30"></app-widget-card>
+    <app-widget-card label="Partners" total="8k" percentage="30" [data]="chartCard"></app-widget-card>
   </mat-card>
   <mat-card fxFlex="22">
-    <app-widget-card label="Partners" total="8k" percentage="20"></app-widget-card>
+    <app-widget-card label="Partners" total="8k" percentage="20" [data]="chartCard"></app-widget-card>
   </mat-card>
 </div>
 
 <br>
-<mat-divider></mat-divider>
 <br>
-
-<div>
-  <div>Table</div>
-  <div>Pie chart</div>
-</div>
+<br>

@@ -1,4 +1,4 @@
-import { Component, OnInit, enableProdMode } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
@@ -10,6 +10,7 @@ HC_exporting(Highcharts);
   styleUrls: ['./area.component.css']
 })
 export class AreaComponent implements OnInit {
+
   chartOptions = {};
   Highcharts = Highcharts;
 
@@ -37,9 +38,6 @@ export class AreaComponent implements OnInit {
         enabled: true,
       },
       series: [{
-        name: 'Asia',
-        data: [502, 635, 809, 947, 1402, 3634, 5268]
-      }, {
         name: 'Africa',
         data: [106, 107, 111, 133, 221, 767, 1766]
       }, {
