@@ -1,3 +1,8 @@
+.mat-toolbar, .toolbar {
+  background-color: #20b2aa;
+  color: white;
+}
+
 ul li {
   list-style: none;
 }
