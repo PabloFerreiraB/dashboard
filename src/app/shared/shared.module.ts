@@ -1,22 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
 
-import { HeaderComponent } from './components/header/header.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from "./components/header/header.component";
+import { SidebarComponent } from "./components/sidebar/sidebar.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 import { MatDividerModule } from "@angular/material/divider";
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatListModule } from "@angular/material/list";
 
-import { AreaComponent } from './widgets/area/area.component';
-import { HighchartsChartModule } from "Highcharts-angular";
-import { CardComponent } from './widgets/card/card.component';
+import { AreaComponent } from "./widgets/area/area.component";
+import { HighchartsChartModule } from "highcharts-angular";
+import { CardComponent } from "./widgets/card/card.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { CardComponent } from './widgets/card/card.component';
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     CommonModule,
@@ -36,14 +36,14 @@ import { CardComponent } from './widgets/card/card.component';
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    CardComponent
-  ]
+    CardComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
